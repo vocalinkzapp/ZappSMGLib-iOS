@@ -11,7 +11,7 @@ import ZappSMGLib
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var pbbaButton: PPBAButton!
+    @IBOutlet weak var pbbaButton: PBBAButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

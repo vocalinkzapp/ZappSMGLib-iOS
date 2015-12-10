@@ -18,6 +18,6 @@ s.platform     = :ios, "8.0"
 s.source_files  = "ZappSMGLib/ZappSMGLib/**/*.{h,m}", "ZappSMGLib/ZappSMGLib/**/*.swift"
 s.exclude_files = "Classes/Exclude"
 
-s.resources = "ZappSMGLibResources/**/*.png"
+s.ios.resource_bundle = { 'ZappSMGLibResources' => "ZappSMGLib/ZappSMGLibResources/**/*.png" }
 
 end

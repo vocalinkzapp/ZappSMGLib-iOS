@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3403C02CF0416332D6418FE9 /* Pods_ZappSMGLibDemoObjCPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF40F60412F366212D33226F /* Pods_ZappSMGLibDemoObjCPods.framework */; };
+		CD1A5D391C19DB8400F2BDF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1A5D381C19DB8400F2BDF8 /* main.m */; };
+		CD1A5D3C1C19DB8400F2BDF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1A5D3B1C19DB8400F2BDF8 /* AppDelegate.m */; };
+		CD1A5D3F1C19DB8400F2BDF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1A5D3E1C19DB8400F2BDF8 /* ViewController.m */; };
+		CD1A5D421C19DB8400F2BDF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1A5D401C19DB8400F2BDF8 /* Main.storyboard */; };
+		CD1A5D441C19DB8400F2BDF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1A5D431C19DB8400F2BDF8 /* Assets.xcassets */; };
+		CD1A5D471C19DB8400F2BDF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1A5D451C19DB8400F2BDF8 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		74F444E0D4EA0F1633D8F08D /* Pods-ZappSMGLibDemoObjCPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappSMGLibDemoObjCPods.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappSMGLibDemoObjCPods/Pods-ZappSMGLibDemoObjCPods.release.xcconfig"; sourceTree = "<group>"; };
+		BBAFF567E6D21CCCB492BD48 /* Pods-ZappSMGLibDemoObjCPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappSMGLibDemoObjCPods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZappSMGLibDemoObjCPods/Pods-ZappSMGLibDemoObjCPods.debug.xcconfig"; sourceTree = "<group>"; };
+		CD1A5D341C19DB8400F2BDF8 /* ZappSMGLibDemoObjCPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZappSMGLibDemoObjCPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1A5D381C19DB8400F2BDF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD1A5D3A1C19DB8400F2BDF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD1A5D3B1C19DB8400F2BDF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD1A5D3D1C19DB8400F2BDF8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CD1A5D3E1C19DB8400F2BDF8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD1A5D411C19DB8400F2BDF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD1A5D431C19DB8400F2BDF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD1A5D461C19DB8400F2BDF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD1A5D481C19DB8400F2BDF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF40F60412F366212D33226F /* Pods_ZappSMGLibDemoObjCPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappSMGLibDemoObjCPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD1A5D311C19DB8400F2BDF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3403C02CF0416332D6418FE9 /* Pods_ZappSMGLibDemoObjCPods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B067DC0F0C34B4BAFDE062E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF40F60412F366212D33226F /* Pods_ZappSMGLibDemoObjCPods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98A4AF7AD3C6ABE930E9A650 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBAFF567E6D21CCCB492BD48 /* Pods-ZappSMGLibDemoObjCPods.debug.xcconfig */,
+				74F444E0D4EA0F1633D8F08D /* Pods-ZappSMGLibDemoObjCPods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD1A5D2B1C19DB8400F2BDF8 = {
+			isa = PBXGroup;
+			children = (
+				CD1A5D361C19DB8400F2BDF8 /* ZappSMGLibDemoObjCPods */,
+				CD1A5D351C19DB8400F2BDF8 /* Products */,
+				98A4AF7AD3C6ABE930E9A650 /* Pods */,
+				5B067DC0F0C34B4BAFDE062E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD1A5D351C19DB8400F2BDF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD1A5D341C19DB8400F2BDF8 /* ZappSMGLibDemoObjCPods.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD1A5D361C19DB8400F2BDF8 /* ZappSMGLibDemoObjCPods */ = {
+			isa = PBXGroup;
+			children = (
+				CD1A5D3A1C19DB8400F2BDF8 /* AppDelegate.h */,
+				CD1A5D3B1C19DB8400F2BDF8 /* AppDelegate.m */,
+				CD1A5D3D1C19DB8400F2BDF8 /* ViewController.h */,
+				CD1A5D3E1C19DB8400F2BDF8 /* ViewController.m */,
+				CD1A5D401C19DB8400F2BDF8 /* Main.storyboard */,
+				CD1A5D431C19DB8400F2BDF8 /* Assets.xcassets */,
+				CD1A5D451C19DB8400F2BDF8 /* LaunchScreen.storyboard */,
+				CD1A5D481C19DB8400F2BDF8 /* Info.plist */,
+				CD1A5D371C19DB8400F2BDF8 /* Supporting Files */,
+			);
+			path = ZappSMGLibDemoObjCPods;
+			sourceTree = "<group>";
+		};
+		CD1A5D371C19DB8400F2BDF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD1A5D381C19DB8400F2BDF8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD1A5D331C19DB8400F2BDF8 /* ZappSMGLibDemoObjCPods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD1A5D4B1C19DB8400F2BDF8 /* Build configuration list for PBXNativeTarget "ZappSMGLibDemoObjCPods" */;
+			buildPhases = (
+				F558D32B51256B6B8C51C2A4 /* Check Pods Manifest.lock */,
+				CD1A5D301C19DB8400F2BDF8 /* Sources */,
+				CD1A5D311C19DB8400F2BDF8 /* Frameworks */,
+				CD1A5D321C19DB8400F2BDF8 /* Resources */,
+				A4CB476A58B9978D9892AFFD /* Embed Pods Frameworks */,
+				E97F8D7D75AA81B641FCBFAB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZappSMGLibDemoObjCPods;
+			productName = ZappSMGLibDemoObjCPods;
+			productReference = CD1A5D341C19DB8400F2BDF8 /* ZappSMGLibDemoObjCPods.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD1A5D2C1C19DB8400F2BDF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Zapp;
+				TargetAttributes = {
+					CD1A5D331C19DB8400F2BDF8 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = CD1A5D2F1C19DB8400F2BDF8 /* Build configuration list for PBXProject "ZappSMGLibDemoObjCPods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD1A5D2B1C19DB8400F2BDF8;
+			productRefGroup = CD1A5D351C19DB8400F2BDF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD1A5D331C19DB8400F2BDF8 /* ZappSMGLibDemoObjCPods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD1A5D321C19DB8400F2BDF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1A5D471C19DB8400F2BDF8 /* LaunchScreen.storyboard in Resources */,
+				CD1A5D441C19DB8400F2BDF8 /* Assets.xcassets in Resources */,
+				CD1A5D421C19DB8400F2BDF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4CB476A58B9978D9892AFFD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZappSMGLibDemoObjCPods/Pods-ZappSMGLibDemoObjCPods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E97F8D7D75AA81B641FCBFAB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZappSMGLibDemoObjCPods/Pods-ZappSMGLibDemoObjCPods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F558D32B51256B6B8C51C2A4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD1A5D301C19DB8400F2BDF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1A5D3F1C19DB8400F2BDF8 /* ViewController.m in Sources */,
+				CD1A5D3C1C19DB8400F2BDF8 /* AppDelegate.m in Sources */,
+				CD1A5D391C19DB8400F2BDF8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD1A5D401C19DB8400F2BDF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD1A5D411C19DB8400F2BDF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD1A5D451C19DB8400F2BDF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD1A5D461C19DB8400F2BDF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD1A5D491C19DB8400F2BDF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD1A5D4A1C19DB8400F2BDF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD1A5D4C1C19DB8400F2BDF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBAFF567E6D21CCCB492BD48 /* Pods-ZappSMGLibDemoObjCPods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZappSMGLibDemoObjCPods/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zapp.ZappSMGLibDemoObjCPods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD1A5D4D1C19DB8400F2BDF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74F444E0D4EA0F1633D8F08D /* Pods-ZappSMGLibDemoObjCPods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZappSMGLibDemoObjCPods/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zapp.ZappSMGLibDemoObjCPods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD1A5D2F1C19DB8400F2BDF8 /* Build configuration list for PBXProject "ZappSMGLibDemoObjCPods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1A5D491C19DB8400F2BDF8 /* Debug */,
+				CD1A5D4A1C19DB8400F2BDF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD1A5D4B1C19DB8400F2BDF8 /* Build configuration list for PBXNativeTarget "ZappSMGLibDemoObjCPods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1A5D4C1C19DB8400F2BDF8 /* Debug */,
+				CD1A5D4D1C19DB8400F2BDF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD1A5D2C1C19DB8400F2BDF8 /* Project object */;
+}

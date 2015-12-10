@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD1A5D511C19E2D200F2BDF8 /* ZappSMGLibResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CD47CBA41C18A4E700EA2772 /* ZappSMGLibResources.bundle */; };
+		CD1A5D521C19E3A400F2BDF8 /* ZappSMGLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6EDAFA1C16B9DB00985801 /* ZappSMGLib.framework */; };
 		CD47CC3F1C18A54400EA2772 /* squiggle-part-00.png in Resources */ = {isa = PBXBuildFile; fileRef = CD47CBAD1C18A54400EA2772 /* squiggle-part-00.png */; };
 		CD47CC401C18A54400EA2772 /* squiggle-part-01.png in Resources */ = {isa = PBXBuildFile; fileRef = CD47CBAE1C18A54400EA2772 /* squiggle-part-01.png */; };
 		CD47CC411C18A54400EA2772 /* squiggle-part-02.png in Resources */ = {isa = PBXBuildFile; fileRef = CD47CBAF1C18A54400EA2772 /* squiggle-part-02.png */; };
@@ -179,7 +181,6 @@
 		CD6EDBC11C1890EE00985801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6EDBBF1C1890EE00985801 /* Main.storyboard */; };
 		CD6EDBC31C1890EE00985801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6EDBC21C1890EE00985801 /* Assets.xcassets */; };
 		CD6EDBC61C1890EE00985801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6EDBC41C1890EE00985801 /* LaunchScreen.storyboard */; };
-		CD6EDBCC1C1891BD00985801 /* ZappSMGLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6EDAFA1C16B9DB00985801 /* ZappSMGLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -351,27 +352,27 @@
 		CD47CCD51C19703000EA2772 /* button-title-base@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-title-base@2x.png"; sourceTree = "<group>"; };
 		CD47CCD61C19703000EA2772 /* button-title-base@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-title-base@3x.png"; sourceTree = "<group>"; };
 		CD6EDAFA1C16B9DB00985801 /* ZappSMGLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZappSMGLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD6EDAFD1C16B9DB00985801 /* ZappSMGLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZappSMGLib.h; sourceTree = "<group>"; };
+		CD6EDAFD1C16B9DB00985801 /* ZappSMGLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZappSMGLib.h; path = Classes/ZappSMGLib.h; sourceTree = "<group>"; };
 		CD6EDAFF1C16B9DB00985801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD6EDB041C16B9DB00985801 /* ZappSMGLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZappSMGLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6EDB0B1C16B9DC00985801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD6EDB141C16BDA500985801 /* AdHoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdHoc.swift; sourceTree = "<group>"; };
-		CD6EDB161C16BFF000985801 /* CurrencyAmount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyAmount.swift; sourceTree = "<group>"; };
+		CD6EDB141C16BDA500985801 /* AdHoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdHoc.swift; path = Classes/AdHoc.swift; sourceTree = "<group>"; };
+		CD6EDB161C16BFF000985801 /* CurrencyAmount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrencyAmount.swift; path = Classes/CurrencyAmount.swift; sourceTree = "<group>"; };
 		CD6EDB181C16C81500985801 /* AdHocSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdHocSpec.m; sourceTree = "<group>"; };
 		CD6EDB1C1C16CBE300985801 /* CurrencyAmountSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyAmountSpec.m; sourceTree = "<group>"; };
-		CD6EDB1E1C17113D00985801 /* Validatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
-		CD6EDB201C17156500985801 /* ValidationUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationUtils.swift; sourceTree = "<group>"; };
-		CD6EDB251C1747B300985801 /* LiteAddressDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiteAddressDetails.swift; sourceTree = "<group>"; };
-		CD6EDB271C1747C900985801 /* LiteMerchant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiteMerchant.swift; sourceTree = "<group>"; };
-		CD6EDB291C1747DD00985801 /* LitePaymentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LitePaymentRequest.swift; sourceTree = "<group>"; };
-		CD6EDB2B1C1747F100985801 /* LitePaymentStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LitePaymentStatus.swift; sourceTree = "<group>"; };
-		CD6EDB2D1C17481500985801 /* LitePaymentStatusDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LitePaymentStatusDescription.swift; sourceTree = "<group>"; };
-		CD6EDB2F1C17483800985801 /* LiteSettlementType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiteSettlementType.swift; sourceTree = "<group>"; };
-		CD6EDB311C17486B00985801 /* LiteTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiteTransaction.swift; sourceTree = "<group>"; };
+		CD6EDB1E1C17113D00985801 /* Validatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Classes/Validatable.swift; sourceTree = "<group>"; };
+		CD6EDB201C17156500985801 /* ValidationUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidationUtils.swift; path = Classes/ValidationUtils.swift; sourceTree = "<group>"; };
+		CD6EDB251C1747B300985801 /* LiteAddressDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiteAddressDetails.swift; path = Classes/LiteAddressDetails.swift; sourceTree = "<group>"; };
+		CD6EDB271C1747C900985801 /* LiteMerchant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiteMerchant.swift; path = Classes/LiteMerchant.swift; sourceTree = "<group>"; };
+		CD6EDB291C1747DD00985801 /* LitePaymentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LitePaymentRequest.swift; path = Classes/LitePaymentRequest.swift; sourceTree = "<group>"; };
+		CD6EDB2B1C1747F100985801 /* LitePaymentStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LitePaymentStatus.swift; path = Classes/LitePaymentStatus.swift; sourceTree = "<group>"; };
+		CD6EDB2D1C17481500985801 /* LitePaymentStatusDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LitePaymentStatusDescription.swift; path = Classes/LitePaymentStatusDescription.swift; sourceTree = "<group>"; };
+		CD6EDB2F1C17483800985801 /* LiteSettlementType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiteSettlementType.swift; path = Classes/LiteSettlementType.swift; sourceTree = "<group>"; };
+		CD6EDB311C17486B00985801 /* LiteTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiteTransaction.swift; path = Classes/LiteTransaction.swift; sourceTree = "<group>"; };
 		CD6EDB331C1827AB00985801 /* LiteAddressDetailsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiteAddressDetailsSpec.m; sourceTree = "<group>"; };
-		CD6EDB361C185AF600985801 /* LitlePaymentStatusResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LitlePaymentStatusResponse.swift; sourceTree = "<group>"; };
-		CD6EDB3A1C187D2900985801 /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
-		CD6EDB3E1C18837400985801 /* PBBAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBBAButton.swift; sourceTree = "<group>"; };
+		CD6EDB361C185AF600985801 /* LitlePaymentStatusResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LitlePaymentStatusResponse.swift; path = Classes/LitlePaymentStatusResponse.swift; sourceTree = "<group>"; };
+		CD6EDB3A1C187D2900985801 /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppUtils.swift; path = Classes/AppUtils.swift; sourceTree = "<group>"; };
+		CD6EDB3E1C18837400985801 /* PBBAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PBBAButton.swift; path = Classes/PBBAButton.swift; sourceTree = "<group>"; };
 		CD6EDBB91C1890ED00985801 /* ZappSMGLibDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZappSMGLibDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6EDBBB1C1890EE00985801 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD6EDBBD1C1890EE00985801 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -408,7 +409,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD6EDBCC1C1891BD00985801 /* ZappSMGLib.framework in Frameworks */,
+				CD1A5D521C19E3A400F2BDF8 /* ZappSMGLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1011,6 +1012,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1A5D511C19E2D200F2BDF8 /* ZappSMGLibResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
