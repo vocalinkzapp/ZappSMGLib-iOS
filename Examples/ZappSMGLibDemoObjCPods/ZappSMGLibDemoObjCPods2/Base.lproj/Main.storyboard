@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZappSMGLibDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,36 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6me-DU-ABn" customClass="PBBAButton" customModule="ZappSMGLib">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAd-LK-Psf" customClass="ZLPBBAButton">
                                 <rect key="frame" x="30" y="275" width="540" height="50"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.43137254899999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="7kY-AK-ruy"/>
+                                    <constraint firstAttribute="height" constant="50" id="Czd-F8-Z2N"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="6me-DU-ABn" secondAttribute="trailing" constant="10" id="2Sb-Db-VmA"/>
-                            <constraint firstItem="6me-DU-ABn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="5F6-cQ-lgP"/>
-                            <constraint firstItem="6me-DU-ABn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ccq-Ws-ftR"/>
-                            <constraint firstItem="6me-DU-ABn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uUD-WB-6Fb"/>
+                            <constraint firstItem="VAd-LK-Psf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="90F-RN-jaA"/>
+                            <constraint firstItem="VAd-LK-Psf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Okz-6g-CNg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VAd-LK-Psf" secondAttribute="trailing" constant="10" id="rZb-ZL-kuG"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Ccq-Ws-ftR"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <connections>
-                        <outlet property="pbbaButton" destination="6me-DU-ABn" id="bfq-jY-97w"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="487" y="444"/>
         </scene>
     </scenes>
 </document>

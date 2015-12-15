@@ -57,7 +57,7 @@ protocol Animatable {
     func stopAnimating()
 }
 
-class PBBASquigleView: UIView, Animatable {
+class PBBASquiggleView: UIView, Animatable {
     
     var squiggleImageView: UIImageView?
     
@@ -128,7 +128,7 @@ class PBBASquigleView: UIView, Animatable {
 class PBBAButtonTitleView : UIView, Animatable {
     
     var titleImageView: UIImageView?
-    var squiggleView: PBBASquigleView?
+    var squiggleView: PBBASquiggleView?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -158,7 +158,7 @@ class PBBAButtonTitleView : UIView, Animatable {
         titleImageView.translatesAutoresizingMaskIntoConstraints = false
         titleImageView.contentMode = .ScaleAspectFit
         
-        squiggleView = PBBASquigleView(frame: CGRectZero)
+        squiggleView = PBBASquiggleView(frame: CGRectZero)
         
         guard let squiggleView = squiggleView else {
             return
@@ -285,7 +285,6 @@ class PBBAButtonTitleView : UIView, Animatable {
         }
         
         if let tapHandler = tapHandler {
-            enabled = false
             titleView?.startAnimating()
             tapHandler(button)
         }
@@ -296,10 +295,12 @@ class PBBAButtonTitleView : UIView, Animatable {
     }
     
     public func startAnimating() {
+        enabled = false
         titleView?.startAnimating()
     }
     
     public func stopAnimating() {
+        enabled = true
         titleView?.stopAnimating()
     }
 }

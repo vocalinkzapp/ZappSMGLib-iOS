@@ -1,0 +1,14 @@
+PODS:
+  - ZappSMGLibObjC (1.0.0)
+
+DEPENDENCIES:
+  - ZappSMGLibObjC (from `../..`)
+
+EXTERNAL SOURCES:
+  ZappSMGLibObjC:
+    :path: ../..
+
+SPEC CHECKSUMS:
+  ZappSMGLibObjC: 7e9d3cca2ee2b639960c005a6d444896596a7bcc
+
+COCOAPODS: 0.39.0
