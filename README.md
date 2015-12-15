@@ -85,7 +85,6 @@ This repo includes a demo app which uses `ZappSMGLibObjC` static lib. You can fi
 
 ```ruby
 platform :ios, '7.0'
-use_frameworks!
 
 target 'YourAppTarget' do
     pod "ZappSMGLibObjC", :git => 'git@github.com:vocalinkzapp/ZappSMGLib-iOS.git'
