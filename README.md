@@ -4,7 +4,9 @@
 
 This documentation provides a description about what is the **recommended way** for third party merchants to integrate within their applications the Zapp Small Merchant Gateway (through the Merchant backend) to implement the Zapp mobile commerce journey.
 
-## Installation
+We provide both Swift and Objective-C versions of library. However you can use the Swift lib in your Objective-C project.
+
+## Swift Library Installation
 
 ### iOS 8+
 
@@ -68,6 +70,31 @@ For Objective-C projects, after importing the source files into the project, you
 **NOTE!!!** You also will need to include the `ZappSMGLibResources.bundle` into your project. You can find it in `Resources/ZappSMGLibResources.bundle`.
 
 This repo includes a demo app which uses `ZappSMGLib` source files included manually. You can find this example in `ZappSMGLibDemoObjC/ZappSMGLibDemoObjC.xcodeproj` project.
+
+## Objective-C Library Installation
+
+#### Manual installation
+
+In order to include the `ZappSMGLibObjC` library into your project, you need to build a static lib from provided source code and include it into your project together with header files.
+
+**NOTE!!!** You also will need to include the `ZappSMGLibResources.bundle` into your project. You can find it in `Resources/ZappSMGLibResources.bundle`.
+
+This repo includes a demo app which uses `ZappSMGLibObjC` static lib. You can find this example in `ZappSMGLib/ZappSMGLib.xcodeproj` project.
+
+#### CocoaPods installation
+
+```ruby
+platform :ios, '7.0'
+use_frameworks!
+
+target 'YourAppTarget' do
+    pod "ZappSMGLibObjC", :git => 'git@github.com:vocalinkzapp/ZappSMGLib-iOS.git'
+end
+
+```
+This repo includes a demo app which uses `ZappSMGLib` static lib included through CocoaPods installation. You can find this example in `ZappSMGLibDemoObjCPods/ZappSMGLibDemoObjCPods.xcworkspace` project workspace.
+
+**NOTE!!!** All Objective-C classes are prefixed with `ZL`.
 
 ## Abbreviations
 
@@ -172,7 +199,7 @@ After this, the Merchant App starts its custom transaction timer which provides 
 public func didPollForPaymentStatus() {
     //if the Merchant App is not in the background (e.g. the user put it to the background or the 
     //CFI App took over) then perform payment status polling on the Merchant backend using the aptrId 
-    //from the mTransaction field (see its description later), otherwise ignore polling
+    //from the transaction field (see its description later), otherwise ignore polling
 
     //get the aptrId from the transaction
     let aptrId = transaction.aptrId
@@ -181,7 +208,7 @@ public func didPollForPaymentStatus() {
     //execute network request, please switch to a background thread)
 }
 
-public func onPaymentConfirmationExpired() {
+public func paymentConfirmationDidExpire() {
     //if the Merchant App is not in the background (e.g. the user put it to the background or the 
     //CFI App took over), then display the confirmation screen in the Merchant App with a 
     //'payment declined' message, otherwise save this event and act on it when the Merchant App 
