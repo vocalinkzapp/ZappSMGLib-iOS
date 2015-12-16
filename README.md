@@ -4,7 +4,7 @@
 
 This documentation provides a description about what is the **recommended way** for third party merchants to integrate within their applications the Zapp Small Merchant Gateway (through the Merchant backend) to implement the Zapp mobile commerce journey.
 
-We provide both Swift and Objective-C versions of library. However you can use the Swift lib in your Objective-C project.
+We provide both, Swift and Objective-C versions of the library. However you can use the Swift lib in your Objective-C project, please refer to the apple documentation to get this working in your project.
 
 ## Swift Library Installation
 
@@ -16,9 +16,14 @@ In order to include the `ZappSMGLib` library into your project, you need to buil
 
 **NOTE:** Resource bundle is included into the framework.
 
-This repo includes a demo app which uses `ZappSMGLib` dynamic framework. You can find this example in `ZappSMGLib/ZappSMGLib.xcodeproj` project.
+This repository includes a demo app which uses `ZappSMGLib` dynamic framework. You can find this example in `ZappSMGLib/ZappSMGLib.xcodeproj` project.
+
+We are going to explain how to integrate the library by using a third party tool to resolve the dependencies automatically. We will refer to Carthage and CocoaPods
+as they are broadly extended.
 
 #### Carthage installation
+
+If you are using Carthage* in your project, you can always use it to build the library within your workspace by using the next configuration.
 
 If you want to build the latest tagged release, add this in your `Cartfile`:
 ```
@@ -33,7 +38,11 @@ github "vocalinkzapp/ZappSMGLib-iOS" "master"
 Run `carthage update`. This will fetch dependencies into a `Carthage/Checkouts` folder and build the framework.
 On your application targets’ “General” settings tab, in the “Embedded Binaries” section, drag and drop the framework from the `Carthage/Build` folder on disk.
 
+note*: If you need further information about Carthage, please refer to the next link : https://github.com/Carthage/Carthage
+
 #### CocoaPods installation
+
+In the case you use CocoaPods*, you can as well use it to integrate the library with the next script. 
 
 ```ruby
 platform :ios, '8.0'
@@ -44,7 +53,9 @@ target 'YourAppTarget' do
 end
 
 ```
-This repo includes a demo app which uses `ZappSMGLib` dynamic framework included through CocoaPods installation. You can find this example in `ZappSMGLibDemoObjCPods/ZappSMGLibDemoObjCPods.xcworkspace` project workspace.
+This repository includes a demo app which uses `ZappSMGLib` dynamic framework included through CocoaPods installation. You can find this example in `ZappSMGLibDemoObjCPods/ZappSMGLibDemoObjCPods.xcworkspace` project workspace.
+
+note*: If you need further information about CocoaPods, please refer to the next link : https://cocoapods.org/
 
 ### iOS 7
 
@@ -67,9 +78,9 @@ For Objective-C projects, after importing the source files into the project, you
 
 ```
 
-**NOTE!!!** You also will need to include the `ZappSMGLibResources.bundle` into your project. You can find it in `Resources/ZappSMGLibResources.bundle`.
+**NOTE:** You also will need to include the `ZappSMGLibResources.bundle` into your project. You can find it in `Resources/ZappSMGLibResources.bundle`.
 
-This repo includes a demo app which uses `ZappSMGLib` source files included manually. You can find this example in `ZappSMGLibDemoObjC/ZappSMGLibDemoObjC.xcodeproj` project.
+This repository includes a demo app which uses `ZappSMGLib` source files included manually. You can find this example in `ZappSMGLibDemoObjC/ZappSMGLibDemoObjC.xcodeproj` project.
 
 ## Objective-C Library Installation
 
@@ -77,9 +88,9 @@ This repo includes a demo app which uses `ZappSMGLib` source files included manu
 
 In order to include the `ZappSMGLibObjC` library into your project, you need to build a static lib from provided source code and include it into your project together with header files.
 
-**NOTE!!!** You also will need to include the `ZappSMGLibResources.bundle` into your project. You can find it in `Resources/ZappSMGLibResources.bundle`.
+**NOTE:** You also will need to include the `ZappSMGLibResources.bundle` into your project. You can find it in `Resources/ZappSMGLibResources.bundle`.
 
-This repo includes a demo app which uses `ZappSMGLibObjC` static lib. You can find this example in `ZappSMGLib/ZappSMGLib.xcodeproj` project.
+This repository includes a demo app which uses `ZappSMGLibObjC` static lib. You can find this example in `ZappSMGLib/ZappSMGLib.xcodeproj` project.
 
 #### CocoaPods installation
 
@@ -91,9 +102,9 @@ target 'YourAppTarget' do
 end
 
 ```
-This repo includes a demo app which uses `ZappSMGLib` static lib included through CocoaPods installation. You can find this example in `ZappSMGLibDemoObjCPods/ZappSMGLibDemoObjCPods.xcworkspace` project workspace.
+This repository includes a demo app which uses `ZappSMGLib` static lib included through CocoaPods installation. You can find this example in `ZappSMGLibDemoObjCPods/ZappSMGLibDemoObjCPods.xcworkspace` project workspace.
 
-**NOTE!!!** All Objective-C classes are prefixed with `ZL`.
+**NOTE:** For a full understanding all Objective-C classes are prefixed with `ZL`.
 
 ## Abbreviations
 
