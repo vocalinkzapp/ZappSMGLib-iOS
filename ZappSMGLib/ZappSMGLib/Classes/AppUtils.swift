@@ -38,7 +38,7 @@ import UIKit
             return
         }
         
-        let appURL = NSURL(string: String(format: "%@/%@/%@", arguments: [AppUtils.zappScheme, aptId, aptrId]))
+        let appURL = NSURL(string: String(format: "%@%@/%@", arguments: [AppUtils.zappScheme, aptId, aptrId]))
         UIApplication.sharedApplication().openURL(appURL!)
     }
 }

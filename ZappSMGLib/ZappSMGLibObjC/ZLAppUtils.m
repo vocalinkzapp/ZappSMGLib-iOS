@@ -32,7 +32,7 @@ NSString * const kZappAppScheme = @"zapp://";
         return;
     }
     
-    NSURL *appUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@", kZappAppScheme, aptId, aptrId]];
+    NSURL *appUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@/%@", kZappAppScheme, aptId, aptrId]];
     [[UIApplication sharedApplication] openURL:appUrl];
 }
 
