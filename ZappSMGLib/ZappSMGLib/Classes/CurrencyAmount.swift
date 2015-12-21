@@ -8,11 +8,6 @@
 
 import Foundation
 
-public enum CurrencyAmountError: ErrorType {
-    case CurrencyCodesMismatch
-    case CurrencyCodeNotSupported
-}
-
 @objc public class CurrencyAmount : NSObject, Validatable {
     
     /// The default currency code.
@@ -40,11 +35,13 @@ public enum CurrencyAmountError: ErrorType {
      
      - parameter currencyAmount: The currency amount to be added.
      
-     - throws: CurrencyAmountError
-     
      - returns: the result of currency amount after adding.
      */
-    public func add(currencyAmount: CurrencyAmount) -> CurrencyAmount {
+    public func add(currencyAmount: CurrencyAmount) -> CurrencyAmount? {
+        
+        guard CurrencyAmount.Pounds == currencyAmount.currencyCode else {
+            return nil
+        }
         
         value += currencyAmount.value
         
@@ -56,11 +53,13 @@ public enum CurrencyAmountError: ErrorType {
      
      - parameter currencyAmount: The currency amount to be subtracted
      
-     - throws: CurrencyAmountError
-     
      - returns: the result of currency amount after subtraction
      */
-    public func substract(currencyAmount: CurrencyAmount) -> CurrencyAmount {
+    public func substract(currencyAmount: CurrencyAmount) -> CurrencyAmount? {
+        
+        guard CurrencyAmount.Pounds == currencyAmount.currencyCode else {
+            return nil
+        }
         
         value -= currencyAmount.value
         
@@ -83,8 +82,6 @@ public enum CurrencyAmountError: ErrorType {
     
     /**
      Get the amount as string.
-     
-     - throws: CurrencyAmountError
      
      - returns: The String representation of the amount.
      */
