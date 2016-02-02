@@ -27,7 +27,7 @@ import Foundation
     public var settlementT: Int?
     
     /// This value is the same as the LitePaymentRequest.adHoc. Optional.
-    public var addHoc: AdHoc?
+    public var adHoc: AdHoc?
     
     /// Return the value of the txnStatus field as LitePaymentStatus instance.
     public var paymentStatus: LitePaymentStatus? {
@@ -98,14 +98,14 @@ import Foundation
         }
     }
     
-    public init(txnStatus: Int, txnStatusDesc: Int?, settlementAmount: CLong?, settlementPaymentRef: String?, settlementType: Int?, addHoc: AdHoc?) {
+    public init(txnStatus: Int, txnStatusDesc: Int?, settlementAmount: CLong?, settlementPaymentRef: String?, settlementType: Int?, adHoc: AdHoc?) {
         
         self.txnStatus = txnStatus
         self.txnStatusDesc = txnStatusDesc
         self.settlementAmount = settlementAmount
         self.settlementPaymentRef = settlementPaymentRef
         self.settlementT = settlementType
-        self.addHoc = addHoc
+        self.adHoc = adHoc
     }
     
     /**
