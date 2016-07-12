@@ -8,6 +8,7 @@ s.description  = <<-DESC
 Zapp Small Merchant Library
 DESC
 
+s.source       = "https://github.com/mwfire/ZappSMGLib-iOS"
 s.homepage     = "http://zapp.co.uk"
 s.license      = "Apache License, Version 2.0"
 
