@@ -8,7 +8,25 @@
 
 import Foundation
 
-@objc public class CurrencyAmount : NSObject, Validatable {
+public func + (left: CurrencyAmount, right: CurrencyAmount) -> CurrencyAmount? {
+    
+    guard left.currencyCode == right.currencyCode else {
+        return nil
+    }
+    
+    return CurrencyAmount(value: left.value + right.value, currencyCode: left.currencyCode)
+}
+
+public func - (left: CurrencyAmount, right: CurrencyAmount) -> CurrencyAmount? {
+    
+    guard left.currencyCode == right.currencyCode else {
+        return nil
+    }
+    
+    return CurrencyAmount(value: left.value - right.value, currencyCode: left.currencyCode)
+}
+
+@objc public class CurrencyAmount: NSObject, Validatable {
     
     /// The default currency code.
     public static let Pounds: String = "GBP"
@@ -39,7 +57,7 @@ import Foundation
      */
     public func add(currencyAmount: CurrencyAmount) -> CurrencyAmount? {
         
-        guard CurrencyAmount.Pounds == currencyAmount.currencyCode else {
+        guard self.currencyCode == currencyAmount.currencyCode else {
             return nil
         }
         
@@ -57,7 +75,7 @@ import Foundation
      */
     public func substract(currencyAmount: CurrencyAmount) -> CurrencyAmount? {
         
-        guard CurrencyAmount.Pounds == currencyAmount.currencyCode else {
+        guard self.currencyCode == currencyAmount.currencyCode else {
             return nil
         }
         

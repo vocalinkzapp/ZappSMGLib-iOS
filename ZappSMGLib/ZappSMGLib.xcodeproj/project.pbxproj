@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		CD9F292E1D3574B300C65FC7 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CD9F292F1D3574B300C65FC7 /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+				CD9F29341D3574C000C65FC7 /* SwiftLint */,
+			);
+			dependencies = (
+				CD9F29331D3574BC00C65FC7 /* PBXTargetDependency */,
+			);
+			name = SwiftLint;
+			productName = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		CD1A5D511C19E2D200F2BDF8 /* ZappSMGLibResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CD47CBA41C18A4E700EA2772 /* ZappSMGLibResources.bundle */; };
 		CD1A5D521C19E3A400F2BDF8 /* ZappSMGLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6EDAFA1C16B9DB00985801 /* ZappSMGLib.framework */; };
@@ -223,6 +238,13 @@
 			remoteInfo = ZappSMGLibResources;
 		};
 		CD6EDB061C16B9DB00985801 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD6EDAF11C16B9DB00985801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD6EDAF91C16B9DB00985801;
+			remoteInfo = ZappSMGLib;
+		};
+		CD9F29321D3574BC00C65FC7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CD6EDAF11C16B9DB00985801 /* Project object */;
 			proxyType = 1;
@@ -1078,6 +1100,9 @@
 					CD6EDBB81C1890ED00985801 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
+					CD9F292E1D3574B300C65FC7 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					CDAC91A01C1EB9E100FA11DE = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
@@ -1105,6 +1130,7 @@
 				CD6EDB031C16B9DB00985801 /* ZappSMGLibTests */,
 				CD6EDBB81C1890ED00985801 /* ZappSMGLibDemo */,
 				CDF76D301C1F259C00634F90 /* ZappSMGLibObjCDemo */,
+				CD9F292E1D3574B300C65FC7 /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
@@ -1303,6 +1329,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CD9F29341D3574C000C65FC7 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD47CBA01C18A4E700EA2772 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1389,6 +1432,11 @@
 			isa = PBXTargetDependency;
 			target = CD6EDAF91C16B9DB00985801 /* ZappSMGLib */;
 			targetProxy = CD6EDB061C16B9DB00985801 /* PBXContainerItemProxy */;
+		};
+		CD9F29331D3574BC00C65FC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD6EDAF91C16B9DB00985801 /* ZappSMGLib */;
+			targetProxy = CD9F29321D3574BC00C65FC7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1634,6 +1682,20 @@
 			};
 			name = Release;
 		};
+		CD9F29301D3574B300C65FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD9F29311D3574B300C65FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		CDAC91A81C1EB9E100FA11DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1729,6 +1791,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CD9F292F1D3574B300C65FC7 /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD9F29301D3574B300C65FC7 /* Debug */,
+				CD9F29311D3574B300C65FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		CDAC91A71C1EB9E100FA11DE /* Build configuration list for PBXNativeTarget "ZappSMGLibObjC" */ = {
 			isa = XCConfigurationList;

@@ -5,11 +5,9 @@ s.version      = "1.0.0"
 s.summary      = "Zapp Small Merchant Library"
 
 s.description  = <<-DESC
-Zapp Small Merchant Library
+	Zapp Small Merchant Library for iOS used to integrate Pay by Bank app payments.
 DESC
 
-
-s.source       = { :git => 'https://github.com/vocalinkzapp/ZappSMGLib-iOS', :tag => s.version.to_s }
 s.homepage     = "http://zapp.co.uk"
 s.license      = "Apache License, Version 2.0"
 
@@ -17,6 +15,7 @@ s.author       = { "Alex Maimescu" => "alexandru.maimescu@vocalink.com" }
 
 s.platform     = :ios, "7.0"
 
+s.source        = { :git => 'https://github.com/vocalinkzapp/ZappSMGLib-iOS.git', :tag => s.version.to_s }
 s.source_files  = "ZappSMGLib/ZappSMGLibObjC/**/*.{h,m}"
 s.exclude_files = "Classes/Exclude"
 

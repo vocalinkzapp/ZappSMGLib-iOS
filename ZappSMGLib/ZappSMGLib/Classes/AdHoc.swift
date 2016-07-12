@@ -9,7 +9,7 @@
 import Foundation
 
 /// Ad hoc data structure
-@objc public class AdHoc : NSObject {
+@objc public class AdHoc: NSObject {
     
     /// Key (max length is 255 characters)
     public var key: String?

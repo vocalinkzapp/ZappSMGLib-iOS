@@ -9,7 +9,7 @@
 import Foundation
 
 /// Payment status response model object for Lite merchant gateway.
-@objc public class LitePaymentStatusResponse : NSObject, Validatable {
+@objc public class LitePaymentStatusResponse: NSObject, Validatable {
     
     /// The payment status.
     public var txnStatus: Int
