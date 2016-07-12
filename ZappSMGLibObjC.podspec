@@ -8,7 +8,8 @@ s.description  = <<-DESC
 Zapp Small Merchant Library
 DESC
 
-s.source       = "https://github.com/mwfire/ZappSMGLib-iOS"
+
+s.source       = { :git => 'https://github.com/vocalinkzapp/ZappSMGLib-iOS', :tag => s.version.to_s }
 s.homepage     = "http://zapp.co.uk"
 s.license      = "Apache License, Version 2.0"
 
