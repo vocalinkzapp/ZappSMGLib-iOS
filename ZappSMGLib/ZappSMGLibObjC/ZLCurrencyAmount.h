@@ -65,7 +65,7 @@ extern NSString * const kZLDefaultCurrencyCode;
  *
  *  @return the result of currency amount after subtraction.
  */
-- (instancetype)substract:(ZLCurrencyAmount *)currencyAmount;
+- (instancetype)subtract:(ZLCurrencyAmount *)currencyAmount;
 
 /**
  *  Multiply the current currency amount with the given quantity.

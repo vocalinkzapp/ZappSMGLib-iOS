@@ -73,7 +73,7 @@ public func - (left: CurrencyAmount, right: CurrencyAmount) -> CurrencyAmount? {
      
      - returns: the result of currency amount after subtraction
      */
-    public func substract(currencyAmount: CurrencyAmount) -> CurrencyAmount? {
+    public func subtract(currencyAmount: CurrencyAmount) -> CurrencyAmount? {
         
         guard self.currencyCode == currencyAmount.currencyCode else {
             return nil
