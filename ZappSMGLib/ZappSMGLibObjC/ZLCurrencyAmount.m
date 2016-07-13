@@ -53,7 +53,7 @@ NSString * const kZLDefaultCurrencyCode = @"GBP";
     return nil;
 }
 
-- (instancetype)substract:(ZLCurrencyAmount *)currencyAmount
+- (instancetype)subtract:(ZLCurrencyAmount *)currencyAmount
 {
     if ([self validate] && [currencyAmount validate]) {
         if (self.currencyCode == currencyAmount.currencyCode) {

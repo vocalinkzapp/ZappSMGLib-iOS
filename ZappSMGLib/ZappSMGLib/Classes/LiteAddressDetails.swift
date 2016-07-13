@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public class LiteAddressDetails : NSObject, Validatable {
+@objc public class LiteAddressDetails: NSObject, Validatable {
     
     public var addressId: String?
     

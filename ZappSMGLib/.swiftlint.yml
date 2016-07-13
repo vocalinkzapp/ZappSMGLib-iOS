@@ -1,0 +1,11 @@
+disabled_rules:
+ - trailing_whitespace
+ - trailing_newline 
+ - line_length
+ - type_name
+ - function_parameter_count
+
+excluded: 
+  - Carthage
+  - Pods
+  - Libs

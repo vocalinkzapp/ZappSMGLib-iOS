@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public class LitePaymentRequest : NSObject, Validatable {
+@objc public class LitePaymentRequest: NSObject, Validatable {
     
     /// The total amount for which the merchant would like to get the payment made by the customer.
     public var totalAmount: CLong

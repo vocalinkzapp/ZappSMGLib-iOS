@@ -12,7 +12,7 @@ import UIKit
 extension UIColor {
     
     public class func pbbaButtonBackgroundColor() -> UIColor {
-        return UIColor(red: 255/255.0, green: 110/255.0, blue: 0, alpha: 1)
+        return UIColor(red: 255/255.0, green: 105/255.0, blue: 30/255.0, alpha: 1)
     }
 }
 
@@ -125,7 +125,7 @@ class PBBASquiggleView: UIView, Animatable {
     }
 }
 
-class PBBAButtonTitleView : UIView, Animatable {
+class PBBAButtonTitleView: UIView, Animatable {
     
     var titleImageView: UIImageView?
     var squiggleView: PBBASquiggleView?
@@ -158,7 +158,7 @@ class PBBAButtonTitleView : UIView, Animatable {
         titleImageView.translatesAutoresizingMaskIntoConstraints = false
         titleImageView.contentMode = .ScaleAspectFit
         
-        squiggleView = PBBASquiggleView(frame: CGRectZero)
+        squiggleView = PBBASquiggleView(frame: CGRect.zero)
         
         guard let squiggleView = squiggleView else {
             return
@@ -178,12 +178,12 @@ class PBBAButtonTitleView : UIView, Animatable {
             attribute: .Height, relatedBy: .Equal, toItem: titleImageView, attribute: .Height, multiplier: 1, constant: 0))
         
         // Maximum height for title image view - keep default
-        let heightExpression = String(format: "V:[titleImageView(<=%f)]", CGRectGetHeight(titleImageView.bounds))
+        let heightExpression = String(format: "V:[titleImageView(<=%f)]", titleImageView.bounds.height)
         titleImageView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(heightExpression,
             options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: bindedViews))
         
         // Title image view aspect ratio - keep default
-        let multiplier = CGRectGetHeight(titleImageView.bounds) / CGRectGetWidth(titleImageView.bounds)
+        let multiplier = titleImageView.bounds.height / titleImageView.bounds.width
         titleImageView.addConstraint(NSLayoutConstraint(item: titleImageView,
             attribute: .Height, relatedBy: .Equal, toItem: titleImageView, attribute: .Width, multiplier: multiplier, constant: 0))
 
@@ -224,7 +224,7 @@ class PBBAButtonTitleView : UIView, Animatable {
     }
 }
 
-@objc public class PBBAButton : UIControl, Animatable {
+@objc public class PBBAButton: UIControl, Animatable {
     
     /// Assign a tap handler closure
     public var tapHandler: ((PBBAButton) -> Void)?
@@ -249,7 +249,7 @@ class PBBAButtonTitleView : UIView, Animatable {
         layer.cornerRadius = 4.0
         backgroundColor = UIColor.pbbaButtonBackgroundColor()
         
-        addTarget(self, action: "didTapButton:", forControlEvents: .TouchUpInside)
+        addTarget(self, action: #selector(PBBAButton.didTapButton(_:)), forControlEvents: .TouchUpInside)
         
         sendActionsForControlEvents(.ValueChanged)
         userInteractionEnabled = true

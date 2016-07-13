@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-@objc public class AppUtils : NSObject {
+@objc public class AppUtils: NSObject {
     
     public static let zappScheme: String = "zapp://"
     

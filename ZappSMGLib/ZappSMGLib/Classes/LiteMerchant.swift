@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public class LiteMerchant : NSObject, Validatable {
+@objc public class LiteMerchant: NSObject, Validatable {
     
     /// The unique merchant id assigned to merchant and it must be supplied in payment request message.
     public var merchantId: String?
